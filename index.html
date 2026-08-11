@@ -1,0 +1,607 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DESTRIER — Bugatti · 一座一米高的雕塑</title>
+<meta name="description" content="布加迪 Destrier：Programme Solitaire 第三件 one-of-one。卸下全部空力套件的 Bolide，只剩比例——车高一米，W16 四涡轮 1,600 PS。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DESTRIER — Bugatti · 一座一米高的雕塑">
+<meta property="og:description" content="Programme Solitaire · 1 of 1。卸下盔甲的 Bolide，比例本身的美。1,600 PS / 8.0L W16 / 车高一米。">
+<meta property="og:image" content="assets/hero.webp">
+<meta property="og:url" content="https://destrier.hypercar.site/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/luxury.css">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23050507'/%3E%3Ctext x='50' y='68' font-size='62' text-anchor='middle' fill='%23f2f2f5' font-family='serif'%3ED%3C/text%3E%3C/svg%3E">
+<script src="js/lang-detect.js"></script>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <span class="nav__now mono" id="navNow">01 · 起源</span>
+    <a class="nav__brand is-hidden" href="#hero">
+      <svg viewBox="0 0 2468.89 566.93" width="86" height="20" fill="currentColor" aria-label="BUGATTI"><path d="M272.56 273.34c28.81-26.48 45.95-63.86 45.95-107.47 0-89.56-65.41-154.97-155.75-154.97H0v545.13h174.44c92.67 0 160.42-66.97 160.42-159.64 0-52.18-23.36-95.79-62.3-123.04ZM87.22 95.01h72.42c42.83 0 71.65 28.81 71.65 70.87s-28.81 70.87-71.65 70.87H87.22V95.01Zm84.1 376.91h-84.1V320.84h84.1c45.17 0 76.32 30.37 76.32 75.54s-31.15 75.54-76.32 75.54ZM648.69 406.51c0 44.39-31.93 76.32-76.32 76.32s-76.32-31.93-76.32-76.32V10.9h-87.22v389.38c0 96.56 68.53 166.65 163.54 166.65s163.54-70.09 163.54-166.65V10.9h-87.22v395.61ZM993.03 0c-95.01 0-163.54 70.09-163.54 166.65v233.62c0 96.56 68.53 166.65 163.54 166.65s163.54-70.09 163.54-166.65V241.41H993.03v84.11h76.32v80.99c0 44.39-31.93 76.32-76.32 76.32s-76.32-31.93-76.32-76.32V160.42c0-44.39 31.93-76.32 76.32-76.32s76.32 31.93 76.32 76.32v14.02h87.22v-7.79C1156.57 70.09 1088.04 0 993.03 0ZM1344.1 10.9l-125.38 545.12h86.44L1330.08 447h147.96l24.92 109.02h86.44L1464.03 10.9H1344.1Zm5.45 351.99 54.51-239.08 54.51 239.08h-109.02ZM1604.2 95.01h119.93l.78 461.02h85.66l.78-461.02h119.92V10.9H1604.2v84.11zM1976.59 95.01h119.93l.78 461.02h85.66l.78-461.02h119.92V10.9h-327.07v84.11zM2381.67 10.9h87.22v545.12h-87.22z"></path></svg>
+      <span class="nav__brand-sub">DESTRIER</span>
+    </a>
+    <span class="nav__lang">
+      <a class="lang-btn mono" href="en.html">EN</a>
+      <button class="nav__menu-btn mono" id="menuBtn" aria-label="章节菜单" aria-expanded="false"><span class="nav__menu-icon"><i></i><i></i><i></i></span></button>
+    </span>
+  </div>
+  <div class="nav__progress" aria-hidden="true"><i id="navBar"></i></div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay" hidden>
+  <nav class="menu-overlay__nav" aria-label="章节菜单"></nav>
+</div>
+
+<div class="scroll-gauge" aria-hidden="true">
+  <svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="19"/><circle class="sg__bar" cx="22" cy="22" r="19"/></svg>
+  <span class="sg__num mono">00</span>
+</div>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero__media">
+    <video autoplay muted loop playsinline preload="metadata" poster="assets/hero.webp">
+      <source src="assets/web/moodcut-a.mp4" type="video/mp4">
+    </video>
+    <div class="hero__veil"></div>
+  </div>
+  <div class="hero__content">
+    <p class="hero__tag">LE PUR SANG DES AUTOMOBILES <b>✕</b> SOLITAIRE · 1 OF 1</p>
+    <h1 class="hero__title">DESTRIER</h1>
+    <p class="hero__sub">A Sculpture of Speed — 一座一米高的雕塑。卸下全部空气动力学盔甲的 Bolide，只剩比例。</p>
+    <div class="hero__data">
+      <div><b><em data-count="1600">0</em></b><span>PS</span></div>
+      <div><b><em data-count="8">0</em><small style="font-size:.4em;color:var(--ink-faint)">.0 L</small></b><span>W16 · QUAD TURBO</span></div>
+      <div><b>1<small style="font-size:.4em;color:var(--ink-faint)">M</small></b><span>车高 · HEIGHT</span></div>
+      <div><b>1<small style="font-size:.4em;color:var(--ink-faint)">/1</small></b><span>ONE OF ONE</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 01 起源 ============ -->
+<div class="chapter-break reveal" id="ch01" data-watermark="01">
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">01</span>
+    <div>
+      <h2>一副底盘，两个杰作<span class="latin">One Chassis, Two Masterpieces</span></h2>
+      <p>一辆赛车和一件艺术品能共用一副底盘吗？Type 57 早就回答过。</p></div>
+  </div>
+
+<section class="chapter">
+  <div class="chapter__inner">
+    <div class="prose reveal">
+      <p class="lead">1937 与 1939，Type 57 底盘两次赢得勒芒——车名 Type 57G「Tank」。同一副底盘，还诞生了被称作史上最美汽车的 Type 57SC Atlantic。</p>
+      <p>Destrier 与 Bolide 延续了这条传统：<b>一副底盘，两种完全不同的表达</b>。前挡风上方的铭牌由手工激光蚀刻，同时刻着 57G Tank 与 Atlantic——把这段渊源永远留在车上。</p>
+      <p>它是 Programme Solitaire 的第三件作品，继 Brouillard 与 F.K.P. Hommage 之后。前两件都从故事与历史中生长；Destrier 反过来，不靠故事，靠直觉与情感直接成形。</p>
+    </div>
+
+    <div class="hcards reveal">
+      <div class="hcard">
+        <span class="hcard__year">1937 · 1939</span>
+        <h3>Type 57 底盘</h3>
+        <span class="hcard__num">两届勒芒冠军</span>
+        <p>流线型 Type 57G「Tank」赛车，两次问鼎勒芒 24 小时耐力赛。</p>
+      </div>
+      <div class="hcard">
+        <span class="hcard__year">1930s</span>
+        <h3>Type 57SC Atlantic</h3>
+        <span class="hcard__num">史上最美汽车</span>
+        <p>同一副底盘孕育的另一件作品——被广泛视为汽车设计史的顶点。</p>
+      </div>
+      <div class="hcard">
+        <span class="hcard__year">2026 · 08</span>
+        <h3>Destrier · Solitaire</h3>
+        <span class="hcard__num">第三件 one-of-one</span>
+        <p>2026 年 8 月 16 日，Pebble Beach Concours d'Elegance 首次亮相。</p>
+      </div>
+    </div>
+  </div>
+
+  <figure class="figure figure--full reveal">
+    <div class="figure__media">
+      <img src="assets/story-chassis.webp" alt="与 Bolide 同源的 Destrier" loading="lazy" width="2000" height="1250">
+    </div>
+    <figcaption class="figure__cap" style="max-width:var(--w-doc);margin-left:auto;margin-right:auto;padding:0 clamp(1.5rem,5vw,4rem);">
+      <span class="no">01</span>
+      <span class="zh">与 Bolide 同一副底盘。为赛道而生的平台，也能孕育真正的艺术品——正如当年的 Type 57。</span>
+    </figcaption>
+  </figure>
+</section>
+
+<!-- ============ 02 形态 ============ -->
+<div class="chapter-break chapter-break--dark reveal" id="ch02" data-watermark="02">
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">02</span>
+    <div>
+      <h2>一米的宣言<span class="latin">One Meter Tall</span></h2>
+      <p>如果布加迪史上最强的工程，不装任何翼片、通风口和空力件——还剩什么？</p></div>
+  </div>
+</div>
+
+<section class="chapter">
+  <div class="chapter__inner">
+    <div class="prose reveal">
+      <p class="lead">答案是比例。</p>
+      <p>去掉全部气动附件之后，车身只剩干净的体量——<b>全车只有一米高</b>，比任何一辆布加迪都低。驾驶舱低伏在两片前翼子板之间，静止时也像一匹蓄势待发的战马。</p>
+      <p>Destrier 得名于中世纪骑士最优秀的战马：不是最重的，不是最快的，而是最可靠的。</p>
+    </div>
+
+    <div class="bignums reveal">
+      <div><b><em data-count="1">0</em><small>M</small></b><span>车高 · Height</span></div>
+      <div><b><em data-count="20">0</em><small>″</small></b><span>前轮 · Front</span></div>
+      <div><b><em data-count="21">0</em><small>″</small></b><span>后轮 · Rear</span></div>
+      <div><b>18<small>″ → 21″</small></b><span>轮毂升级 · Wheels</span></div>
+    </div>
+  </div>
+
+  <!-- 章节视频：滨海驾驶（moodcut 段 C） -->
+  <div class="chapter-video reveal">
+    <video autoplay muted loop playsinline preload="metadata" poster="assets/moodcut-c-poster.webp">
+      <source src="assets/web/moodcut-c.mp4" type="video/mp4">
+    </video>
+    <div class="chapter-video__veil"></div>
+    <div class="chapter-video__inner">
+      <span class="chapter-video__no">Form &amp; Stance — 形态与姿态</span>
+      <h3>一座行走的雕塑</h3>
+      <p>低伏、收腰、鼓臀——姿态，就是这台车的宣言。</p>
+    </div>
+  </div>
+
+  <figure class="figure figure--full reveal">
+    <div class="figure__media">
+      <img src="assets/form-side.webp" alt="Destrier 侧面全身" loading="lazy" width="2000" height="952">
+    </div>
+    <figcaption class="figure__cap" style="max-width:var(--w-doc);margin-left:auto;margin-right:auto;padding:0 clamp(1.5rem,5vw,4rem);">
+      <span class="no">02</span>
+      <span class="zh">车身去繁就简——布加迪设计的另一种读法。</span>
+    </figcaption>
+  </figure>
+
+  <div class="chapter__inner">
+    <div class="figrow reveal">
+      <figure class="figure">
+        <div class="figure__media">
+          <img src="assets/wheels.webp" alt="20 与 21 英寸轮毂" loading="lazy" width="1600" height="1000">
+        </div>
+        <figcaption class="figure__cap">
+          <span class="no">03</span>
+          <span class="zh">前 20 英寸、后 21 英寸——路面上立起雕塑般的姿态。</span>
+        </figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media">
+          <img src="assets/design-hip.webp" alt="腰与臀的曲线" loading="lazy" width="1600" height="1000">
+        </div>
+        <figcaption class="figure__cap">
+          <span class="no">04</span>
+          <span class="zh">门后收出戏剧性的腰线，再在后轮上方鼓出有力的臀。</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 设计语言 ============ -->
+<div class="chapter-break reveal" id="ch03" data-watermark="03">
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">03</span>
+    <div>
+      <h2>呼吸的 C 线<span class="latin">The Breathing C-line</span></h2>
+      <p>C 线原本是一道不间断的亮条——在 Destrier 上，它开始呼吸。</p></div>
+  </div>
+</div>
+
+<section class="chapter">
+  <div class="chapter__inner">
+    <div class="prose prose--center reveal">
+      <p class="lead">布加迪的 C 线，传统上是一道环绕车身两侧的不间断亮条。Destrier 让它「呼吸」了。</p>
+      <p>在前轮拱前稍作停顿，露出裸车身，再继续它的路径，与更宽的马蹄形格栅交汇。车尾的融合翼呼应 Chiron Profilée，安静地收拢整个轮廓。</p>
+    </div>
+  </div>
+
+  <!-- 360° 旋转展示 -->
+  <div class="vidcard vidcard--center reveal">
+    <video autoplay muted loop playsinline preload="metadata" poster="assets/turntable-poster.webp">
+      <source src="assets/web/turntable.mp4" type="video/mp4">
+    </video>
+    <div class="vidcard__veil" aria-hidden="true"></div>
+    <span class="vidcard__spin">360°</span>
+    <div class="vidcard__cap">
+      <span class="no">07</span>
+      <span class="zh">绕车一周——同一副底盘，从每个角度审视。</span>
+    </div>
+  </div>
+
+  <div class="chapter__inner">
+    <!-- 设计档案：草图 -->
+    <span class="sec-label reveal">设计档案 — Design Archive</span>
+    <div class="figrow reveal">
+      <figure class="figure">
+        <div class="figure__media">
+          <img src="assets/sketch-front.webp" alt="Destrier 前侧设计草图" loading="lazy" width="1400" height="963">
+        </div>
+        <figcaption class="figure__cap">
+          <span class="no">05</span>
+          <span class="zh">在成形之前，Destrier 先在设计师的铅笔下活了过来。</span>
+        </figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media">
+          <img src="assets/sketch-rear.webp" alt="Destrier 尾部设计草图" loading="lazy" width="1400" height="963">
+        </div>
+        <figcaption class="figure__cap">
+          <span class="no">06</span>
+          <span class="zh">一张接一张的草图，追寻同一种优雅与大胆的平衡。</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <!-- 前脸热点探索 -->
+
+    <div class="quote reveal">
+      <blockquote>Destrier is not a car you understand with your head, it is a car you feel with your heart.<span class="zh">「Destrier 不是一辆用头脑去理解的车，是一辆用心去感受的车。」</span></blockquote>
+      <figcaption><b>Frank Heyl</b> — 布加迪设计总监 · Director of Design</figcaption>
+    </div>
+
+    <div class="figrow reveal">
+      <figure class="figure">
+        <div class="figure__media">
+          <img src="assets/design-c-line.webp" alt="C 线在轮拱前暂停" loading="lazy" width="1600" height="1000">
+        </div>
+        <figcaption class="figure__cap">
+          <span class="no">08</span>
+          <span class="zh">标志性的 C 线有了新的呼吸：在前轮拱前稍作停顿，露出裸车身，再继续汇向马蹄形格栅。</span>
+        </figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media">
+          <img src="assets/design-tail.webp" alt="融入车身的尾翼" loading="lazy" width="1600" height="1000">
+        </div>
+        <figcaption class="figure__cap">
+          <span class="no">09</span>
+          <span class="zh">尾翼与车身融为一体，灵感来自 Chiron Profilée，含蓄地收拢整个轮廓。</span>
+        </figcaption>
+      </figure>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ 04 漆色 ============ -->
+<div class="chapter-break chapter-break--dark reveal" id="ch04" data-watermark="04">
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">04</span>
+    <div>
+      <h2>Sapphire Celeste<span class="latin">The Colour</span></h2>
+      <p>蓝色不是随便选的——那台著名的「Pope」Atlantic，出厂时就是蓝色。</p></div>
+  </div>
+</div>
+
+<section class="chapter">
+  <div class="chapter__inner">
+    <div class="split">
+      <div class="prose reveal">
+        <p class="lead">只为这一台车调的多层漆。</p>
+        <p>「Sapphire Celeste」随光线流转，让车身的体量显露出全部深度。漆层里的钻石闪光，在光线扫过时亮起来。抛光铝饰条衬着这层蓝。</p>
+      </div>
+      <div class="prose reveal">
+        <p class="lead">历史在颜色里回响。</p>
+        <p>Type 57SC Atlantic 底盘 57591——绰号「Pope」的那台——出厂时就是蓝色，后来才被现任车主改喷黑色。Destrier 的蓝，是对那段渊源安静的致敬。</p>
+        <p>外露碳纤维只有两处：前分流器和后扩散器，色调专门配过这层蓝。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 滨海 POV 已移至形态章；漆色章保持纯图 -->
+
+  <figure class="figure figure--full reveal">
+    <div class="figure__media">
+      <img src="assets/paint-front.webp" alt="Sapphire Celeste 漆面在光线下的变化" loading="lazy" width="2000" height="952">
+    </div>
+    <figcaption class="figure__cap" style="max-width:var(--w-doc);margin-left:auto;margin-right:auto;padding:0 clamp(1.5rem,5vw,4rem);">
+      <span class="no">10</span>
+      <span class="zh">「Sapphire Celeste」专属漆色随光线流转，让车身的体量显露出全部深度。</span>
+    </figcaption>
+  </figure>
+
+  <div class="chapter__inner">
+    <div class="figrow reveal">
+      <figure class="figure">
+        <div class="figure__media">
+          <img src="assets/paint-rear.webp" alt="Sapphire Celeste 车尾" loading="lazy" width="1600" height="1000">
+        </div>
+        <figcaption class="figure__cap">
+          <span class="no">11</span>
+          <span class="zh">漆层里钻石般的闪光，把雕塑感推到最高处。</span>
+        </figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media">
+          <img src="assets/quote.webp" alt="Destrier 的优雅剪影" loading="lazy" width="1400" height="1645">
+        </div>
+        <figcaption class="figure__cap">
+          <span class="no">12</span>
+          <span class="zh">像汽车史上最伟大的剪影一样，Destrier 注定出现在顶级优雅竞赛的草坪上——今天，以及几十年后。</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 引文 ============ -->
+
+<!-- ============ 05 内饰 ============ -->
+<div class="chapter-break reveal" id="ch05" data-watermark="05">
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">05</span>
+    <div>
+      <h2>裁缝的工坊<span class="latin">A Tailor's Atelier</span></h2>
+      <p>座舱完全离开 Bolide 的竞技场——三种材质，定义了整个车厢。</p></div>
+  </div>
+</div>
+
+<section class="chapter">
+  <div class="chapter__inner">
+    <div class="prose reveal">
+      <p class="lead">每一种材质，都像裁缝选布。</p>
+      <p>「Ambre Voyageur」的皮革与翻毛皮，一种经得起时间的暖棕色；加上一种 3D 针织面料——从高定时装和运动服工艺里长出来的无缝三维表面。细铜线织入其中，绕成一道 halo 光环线，环绕整个座舱。锤纹铝在门把手、出风口、方向盘毂、迎宾踏板四处再现。</p>
+    </div>
+
+    <!-- 细节清单 -->
+    <span class="sec-label reveal">细节 — Details</span>
+    <div class="details reveal">
+      <div class="details__item">
+        <span class="d-no">i</span>
+        <p>对比缝线勾出每个部件的几何，<b>头枕刺绣与中控台的流线</b>重复着同一条线。</p>
+      </div>
+      <div class="details__item">
+        <span class="d-no">ii</span>
+        <p>座舱正中有一面小小的<b>法国国旗</b>——回到布加迪的起点。</p>
+      </div>
+      <div class="details__item">
+        <span class="d-no">iii</span>
+        <p>机油加注口盖刻着<b>Destrier 徽章与「1/1」</b>——第三件 Solitaire 的身份印记。</p>
+      </div>
+      <div class="details__item">
+        <span class="d-no">iv</span>
+        <p>头灯与尾灯采用<b>现代参数化图案</b>，从细节里延续设计的语言。</p>
+      </div>
+    </div>
+  </div>
+
+  <figure class="figure figure--full reveal">
+    <div class="figure__media">
+      <img src="assets/interior-seat.webp" alt="Ambre Voyageur 皮革与 3D 针织面料" loading="lazy" width="1600" height="1000">
+    </div>
+    <figcaption class="figure__cap" style="max-width:var(--w-doc);margin-left:auto;margin-right:auto;padding:0 clamp(1.5rem,5vw,4rem);">
+      <span class="no">13</span>
+      <span class="zh">Ambre Voyageur 皮革、翻毛皮与 3D 针织面料，织出一个温暖、量身定制的世界。</span>
+    </figcaption>
+  </figure>
+
+  <div class="chapter__inner">
+    <div class="figrow reveal">
+      <figure class="figure">
+        <div class="figure__media">
+          <img src="assets/interior-atelier.webp" alt="座舱的安静氛围" loading="lazy" width="1600" height="1100">
+        </div>
+        <figcaption class="figure__cap">
+          <span class="no">14</span>
+          <span class="zh">赛道的轰鸣退去，裁缝工坊的安静取而代之——每寸材质都等待被手触摸。</span>
+        </figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media">
+          <img src="assets/interior-hammer.webp" alt="锤纹方向盘毂" loading="lazy" width="1400" height="962">
+        </div>
+        <figcaption class="figure__cap">
+          <span class="no">15</span>
+          <span class="zh">锤纹铝饰延伸至方向盘毂，向中世纪骑士手工锻造的铠甲致意。</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="quote reveal">
+      <blockquote>Nothing shouts. Every surface is measured, tactile, and made for one person alone.<span class="zh">「没有一样东西在喊叫。每个表面都被丈量过、可触摸，为一个人而造。」</span></blockquote>
+      <figcaption><b>Sabine Consolini</b> — 布加迪色彩与内饰总监 · Head of Color and Trim</figcaption>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="figure__media">
+        <img src="assets/interior-sketch.webp" alt="内饰设计草图" loading="lazy" width="1400" height="667">
+      </div>
+      <figcaption class="figure__cap">
+        <span class="no">16</span>
+        <span class="zh">从草图开始，每个材质、每根线条都参与一场只属于一个人的体验。</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 06 心脏 ============ -->
+<div class="chapter-break chapter-break--dark reveal" id="ch06" data-watermark="06">
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">06</span>
+    <div>
+      <h2>藏在车身下的 W16<span class="latin">The W16 Beneath</span></h2>
+      <p>一个几乎顺带一提的细节：与 Bolide 完全相同的动力总成。</p></div>
+  </div>
+</div>
+
+<section class="chapter">
+  <div class="chapter__inner">
+        <div class="gauges reveal">
+      <figure class="gauge" data-gauge="1600" data-max="1600" data-unit="PS" data-label="功率">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b> <span class="gauge__unit mono">PS</span></figcaption>
+        </div>
+        <p class="gauge__label">功率<br><small>W16 最成熟的形态</small></p>
+      </figure>
+      <figure class="gauge" data-gauge="8" data-max="8" data-unit="L" data-label="排量">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b> <span class="gauge__unit mono">L</span></figcaption>
+        </div>
+        <p class="gauge__label">排量<br><small>8.0 升中置发动机</small></p>
+      </figure>
+      <figure class="gauge" data-gauge="16" data-max="16" data-unit="缸" data-label="气缸">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b> <span class="gauge__unit mono">缸</span></figcaption>
+        </div>
+        <p class="gauge__label">气缸<br><small>W16 的旗帜</small></p>
+      </figure>
+      <figure class="gauge" data-gauge="4" data-max="4" data-unit="×" data-label="涡轮">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b> <span class="gauge__unit mono">×</span></figcaption>
+        </div>
+        <p class="gauge__label">涡轮<br><small>四涡轮增压</small></p>
+      </figure>
+    </div>
+    </div>
+
+    <div class="prose prose--center reveal">
+      <p class="lead">和历史上那些优雅竞赛冠军一样，Destrier 的故事是比例与工艺，不是性能数字。</p>
+      <p>车身之下，是 Bolide 完整的 W16 动力总成——<b>1,600 PS，四涡轮 8.0 升</b>，布加迪这台发动机最成熟的形态。它是全车唯一原封不动的部分——因为不需要改。</p>
+      <p>2026 年 8 月 16 日，Pebble Beach Concours d'Elegance——它第一次见人。</p>
+    </div>
+  </div>
+
+  <!-- 章节视频：排气特写（moodcut 段 B） -->
+  <div class="chapter-video reveal">
+    <video autoplay muted loop playsinline preload="metadata" poster="assets/moodcut-b-poster.webp">
+      <source src="assets/web/moodcut-b.mp4" type="video/mp4">
+    </video>
+    <div class="chapter-video__veil"></div>
+    <div class="chapter-video__inner">
+      <span class="chapter-video__no">The W16 Beneath</span>
+      <h3>藏在车尾的十六缸</h3>
+      <p>四出排气的轮廓里，藏着布加迪服役二十年的 W16。</p>
+    </div>
+  </div>
+
+  <div class="chapter__inner">
+    <div class="specs-tabs reveal" id="specsTabs">
+      <div class="specs-tabs__nav" role="tablist">
+        <button class="specs-tabs__btn is-on" data-tab="general" role="tab">车体 · General</button>
+        <button class="specs-tabs__btn" data-tab="powertrain" role="tab">动力 · Powertrain</button>
+        <button class="specs-tabs__btn" data-tab="edition" role="tab">限量 · Edition</button>
+      </div>
+      <div class="specs-tabs__panel is-on" data-panel="general">
+        <div class="specs__group">
+          <div class="specs__row specs__row--hl"><span class="k">车高 Height</span><span class="v">约 1.0<span class="unit">m</span> · 史上最低</span></div>
+          <div class="specs__row"><span class="k">前轮 Front wheels</span><span class="v">20<span class="unit">″</span></span></div>
+          <div class="specs__row"><span class="k">后轮 Rear wheels</span><span class="v">21<span class="unit">″</span></span></div>
+          <div class="specs__row"><span class="k">平台 Platform</span><span class="v">Bolide 碳纤维单体壳</span></div>
+          <div class="specs__row"><span class="k">外露碳纤维 Exposed carbon</span><span class="v">前分流器 · 后扩散器</span></div>
+          <div class="specs__row"><span class="k">专属漆色 Colour</span><span class="v">Sapphire Celeste</span></div>
+        </div>
+      </div>
+      <div class="specs-tabs__panel" data-panel="powertrain">
+        <div class="specs__group">
+          <div class="specs__row"><span class="k">发动机 Engine</span><span class="v">W16 · 四涡轮</span></div>
+          <div class="specs__row"><span class="k">排量 Displacement</span><span class="v">8.0<span class="unit">L</span></span></div>
+          <div class="specs__row specs__row--hl"><span class="k">最大功率 Power</span><span class="v">1,600<span class="unit">PS</span></span></div>
+          <div class="specs__row"><span class="k">动力总成 Drivetrain</span><span class="v">与 Bolide 完全相同</span></div>
+        </div>
+      </div>
+      <div class="specs-tabs__panel" data-panel="edition">
+        <div class="specs__group">
+          <div class="specs__row specs__row--hl"><span class="k">限量 Edition</span><span class="v">1 of 1</span></div>
+          <div class="specs__row"><span class="k">系列 Series</span><span class="v">Programme Solitaire · 第三件</span></div>
+          <div class="specs__row"><span class="k">首秀 Debut</span><span class="v">2026 · 08 · 16</span></div>
+          <div class="specs__row"><span class="k">地点 Venue</span><span class="v">Pebble Beach Concours d'Elegance</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <figure class="figure figure--full reveal">
+    <div class="figure__media">
+      <img src="assets/heart-drive.webp" alt="行驶中的 Destrier" loading="lazy" width="2000" height="857">
+    </div>
+    <figcaption class="figure__cap" style="max-width:var(--w-doc);margin-left:auto;margin-right:auto;padding:0 clamp(1.5rem,5vw,4rem);">
+      <span class="no">17</span>
+      <span class="zh">情感、优雅与技术的顶点，汇于一件作品——布加迪的传统，Destrier 接了过来。</span>
+    </figcaption>
+  </figure>
+
+  <div class="chapter__inner">
+    <div class="quote reveal">
+      <blockquote>Just as the Type 57 chassis gave the world both a Le Mans winner and the Atlantic, one platform has now produced two entirely different masterpieces. I believe Destrier will be gracing Concours lawns 50 years from now.<span class="zh">「正如 Type 57 底盘同时造就了勒芒冠军与 Atlantic，一个平台如今又孕育了两件截然不同的杰作。我相信，五十年后 Destrier 仍会站在 Concours 的草坪上。」</span></blockquote>
+      <figcaption><b>Frank Heyl</b> — 布加迪设计总监</figcaption>
+    </div>
+
+    <div class="figrow reveal">
+      <figure class="figure">
+        <div class="figure__media">
+          <img src="assets/eternal.webp" alt="Destrier 与时间" loading="lazy" width="1600" height="1000">
+        </div>
+        <figcaption class="figure__cap">
+          <span class="no">18</span>
+          <span class="zh">像所有伟大的布加迪一样，Destrier 为时间而造——真正的设计不会过时。</span>
+        </figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media">
+          <img src="assets/hero.webp" alt="Destrier 正面" loading="lazy" width="2000" height="1250">
+        </div>
+        <figcaption class="figure__cap">
+          <span class="no">19</span>
+          <span class="zh">第三件 Solitaire 作品，诞生于一个大胆的想法：让 Bolide 卸下盔甲，露出比例本身的美。</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__portal">
+    <div class="footer__portal-inner">
+      <p class="footer__portal-kicker mono">MORE LEGENDS · 更多传奇</p>
+      <p class="footer__portal-title">HYPERCAR<span class="footer__portal-dot">.</span>SITE</p>
+      <p class="footer__portal-sub">超跑传奇集合介绍页</p>
+      <a class="footer__portal-btn mono" href="https://www.hypercar.site" target="_blank" rel="noopener">前往 Hypercar →</a>
+    </div>
+  </div>
+  <div class="footer__contact">
+    <span class="footer__contact-label mono">CONTACT · 联系</span>
+    <div class="footer__contact-btns">
+      <a class="sbtn sbtn--bili" href="https://space.bilibili.com/675250962" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M7.1 2.6 8.9.8l2.1 2.1L13.1.8l1.8 1.8-1.7 1.7h2.5c1.9 0 3.4 1.5 3.4 3.4v8.6c0 1.9-1.5 3.4-3.4 3.4H6.3c-1.9 0-3.4-1.5-3.4-3.4V7.7c0-1.9 1.5-3.4 3.4-3.4h2.5L7.1 2.6zM7.6 4.3H6.3c-1.3 0-2.4 1.1-2.4 2.4v8.6c0 1.3 1.1 2.4 2.4 2.4h11.4c1.3 0 2.4-1.1 2.4-2.4V6.7c0-1.3-1.1-2.4-2.4-2.4h-1.3l1.2-1.2-.9-.9-2.2 2.2-2.2-2.2-.9.9 1.2 1.2H7.6z"/><circle cx="9.4" cy="12.6" r="1.5"/><circle cx="14.6" cy="12.6" r="1.5"/></svg>
+        <span class="sbtn__txt"><b>BILIBILI</b><small>@HybridV16 · 哔哩哔哩空间</small></span>
+        <i class="sbtn__arrow">→</i>
+      </a>
+      <a class="sbtn sbtn--yt" href="https://www.youtube.com/@HybridV16" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M23.5 7.2s-.2-1.7-.9-2.4c-.9-.9-1.9-.9-2.4-1C16.9 3.5 12 3.5 12 3.5s-4.9 0-8.2.3c-.5.1-1.5.1-2.4 1-.7.7-.9 2.4-.9 2.4S.3 9.2.3 11.2v1.6c0 2 .2 4 .2 4s.2 1.7.9 2.4c.9.9 2.1.9 2.6 1 1.9.2 7.9.3 7.9.3s4.9 0 8.2-.3c.5-.1 1.5-.1 2.4-1 .7-.7.9-2.4.9-2.4s.2-2 .2-4v-1.6c0-2-.2-4-.2-4zM9.7 15.4V8.2l6.4 3.6-6.4 3.6z"/></svg>
+        <span class="sbtn__txt"><b>YOUTUBE</b><small>@HybridV16 · YouTube 频道</small></span>
+        <i class="sbtn__arrow">→</i>
+      </a>
+    </div>
+    <a class="footer__top mono" href="#hero">TOP ↑</a>
+  </div>
+  <div class="footer__disclaimer">
+    <p>本站为爱好者制作的档案页，与 Bugatti Automobiles S.A.S. 无关。Destrier、Bolide 及相关商标、图片、视频版权归布加迪所有；内容以官方发布为准。图片经 newsroom.bugatti.com 官方素材转码。</p>
+    <p class="footer__links">
+      <a href="https://bolide.hypercar.site" target="_blank" rel="noopener">BOLIDE</a> ·
+      <a href="https://tourbillon.hypercar.site" target="_blank" rel="noopener">TOURBILLON</a> ·
+      <a href="https://divo.hypercar.site" target="_blank" rel="noopener">DIVO</a>
+    </p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

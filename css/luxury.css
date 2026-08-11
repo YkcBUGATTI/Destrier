@@ -1,0 +1,177 @@
+﻿/* ============================================================
+   Bugatti Destrier · Luxury 增强层（模仿 tourbillon.hypercar.site）
+   深蓝黑 × 钛银白 × 品牌蓝 —— 与 bolide/tourbillon 家族一致
+   追加于 css/style.css 之后加载；只新增/覆盖样式。
+   不引入金色。装饰克制：光效只出现在 hero、hover 与进度元素。
+   ============================================================ */
+
+:root {
+  --steel: #c9ccd3;                        /* 钛银 */
+  --steel-bright: #f2f4f8;                 /* 亮银白 */
+  --steel-dim: rgba(201, 204, 211, 0.32);  /* 银灰细线 */
+  --steel-soft: rgba(201, 204, 211, 0.10); /* 银灰浅底 */
+  --blue-lux: #6f9dff;                     /* 明亮蓝 */
+  --ink-glass: rgba(8, 10, 17, 0.72);      /* 玻璃拟态底 */
+  --shadow-lux: 0 26px 60px -28px rgba(0, 0, 0, 0.85);
+  --ease-lux: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ---------- 全局质感：深蓝黑微光底 ---------- */
+body {
+  background-image:
+    radial-gradient(1200px 560px at 88% -10%, rgba(0, 75, 250, 0.07), transparent 60%),
+    radial-gradient(960px 520px at -12% 32%, rgba(201, 204, 211, 0.03), transparent 55%);
+  text-rendering: optimizeLegibility;
+}
+
+::selection { background: var(--accent); color: #fff; }
+
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--blue-lux);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ---------- 导航：滚动实底后深蓝黑玻璃 + 蓝色底线 ---------- */
+.nav.is-solid {
+  background: var(--ink-glass);
+  box-shadow: 0 14px 44px -22px rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.nav.is-solid::after {
+  content: '';
+  position: absolute;
+  left: 24px; right: 24px; bottom: -1px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(111, 157, 255, 0.45), transparent);
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+html { scroll-padding-top: 88px; }
+
+/* ---------- Hero：蓝银光效（tourbillon 同款，克制） ---------- */
+.hero__veil {
+  background:
+    radial-gradient(56% 44% at 74% 26%, rgba(201, 204, 211, 0.08), rgba(201, 204, 211, 0.02) 45%, transparent 70%),
+    radial-gradient(46% 36% at 22% 62%, rgba(0, 75, 250, 0.13), transparent 68%),
+    radial-gradient(120% 90% at 50% 110%, rgba(5, 5, 7, 0.95) 0%, rgba(5, 5, 7, 0.55) 45%, rgba(5, 5, 7, 0.25) 75%, rgba(5, 5, 7, 0.4) 100%),
+    linear-gradient(to top, var(--bg) 0%, transparent 28%);
+}
+/* 缓慢旋转的蓝白光带：陀飞轮游丝意象 */
+.hero__veil::before {
+  content: '';
+  position: absolute;
+  inset: -45%;
+  background: conic-gradient(from 0deg,
+    transparent 0deg, rgba(201, 204, 211, 0.06) 38deg, transparent 92deg,
+    rgba(0, 75, 250, 0.06) 190deg, transparent 250deg,
+    rgba(201, 204, 211, 0.06) 318deg, transparent 360deg);
+  animation: lux-rotate 52s linear infinite;
+  will-change: transform;
+  pointer-events: none;
+}
+@keyframes lux-rotate { to { transform: rotate(1turn); } }
+
+.hero__title {
+  text-shadow:
+    0 2px 34px rgba(111, 157, 255, 0.16),
+    0 0 110px rgba(0, 75, 250, 0.2);
+}
+/* ---------- 卡片：浮起 + 深阴影 + 银蓝描边 ---------- */
+.point, .hcard, .stat, .details__item, .legend {
+  transition:
+    transform 0.5s var(--ease-lux),
+    box-shadow 0.5s var(--ease-lux),
+    border-color 0.5s var(--ease-lux),
+    background-color 0.5s var(--ease-lux);
+}
+.point:hover, .hcard:hover, .stat:hover, .details__item:hover, .legend:hover {
+  border-color: rgba(111, 157, 255, 0.4);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    var(--shadow-lux),
+    0 0 30px -14px rgba(0, 75, 250, 0.35);
+  transform: translateY(-4px);
+}
+
+/* 卡片鼠标径向光（--mx/--my 由 main.js 写入） */
+.point::after, .hcard::after, .stat::after, .details__item::after, .legend::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(320px circle at var(--mx, 50%) var(--my, 50%), rgba(0, 75, 250, 0.11), transparent 62%);
+  opacity: 0;
+  transition: opacity 0.4s;
+  pointer-events: none;
+  z-index: 1;
+}
+.point:hover::after, .hcard:hover::after, .stat:hover::after,
+.details__item:hover::after, .legend:hover::after { opacity: 1; }
+
+/* ---------- 玻璃拟态（克制使用） ---------- */
+.menu-overlay { background: rgba(6, 7, 13, 0.86); }
+.hotspot::after {
+  background: var(--ink-glass);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(111, 157, 255, 0.4);
+}
+
+/* ---------- 滚动进度表盘：品牌蓝描边 + 辉光 ---------- */
+.scroll-gauge .sg__bar {
+  stroke: var(--blue-lux);
+  filter: drop-shadow(0 0 4px rgba(0, 75, 250, 0.6));
+}
+
+/* ---------- 页脚 ---------- */
+.footer__portal-title { text-shadow: 0 0 30px rgba(0, 75, 250, 0.25); }
+.footer__portal-dot { color: var(--blue-lux); }
+
+/* ---------- Hero 滚动提示：横向文字 + 蓝色生长线 ---------- */
+.hero__scroll {
+  position: absolute;
+  bottom: 2.2rem; left: 50%;
+  transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: .8rem;
+  font-size: .66rem; letter-spacing: .42em;
+  color: var(--ink-faint);
+  writing-mode: horizontal-tb;
+}
+.hero__scroll::after { display: none; }
+.hero__line {
+  width: 1px; height: 3rem;
+  background: var(--steel-dim);
+  position: relative;
+  overflow: hidden;
+}
+.hero__line::after {
+  content: '';
+  position: absolute; left: 0; top: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(180deg, transparent, var(--blue-lux));
+  animation: lux-line 2.6s var(--ease-lux) infinite;
+}
+@keyframes lux-line {
+  0% { top: -100%; }
+  55% { top: 100%; }
+  100% { top: 100%; }
+}
+
+/* ---------- 响应式细节 ---------- */
+@media (max-width: 768px) {
+  .hero__title { font-size: clamp(6rem, 24vw, 10rem); }
+  .hero__data { gap: 1.4rem 2rem; }
+}
+@media (max-width: 480px) {
+  .hero__data b { font-size: 1.5rem; }
+}
+
+/* ---------- 无障碍降级 ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .hero__veil::before,
+  .hero__line::after { animation: none !important; }
+  .point, .hcard, .stat, .details__item, .legend { transition: none !important; }
+  .point::after, .hcard::after, .stat::after, .details__item::after, .legend::after { transition: none !important; }
+}
