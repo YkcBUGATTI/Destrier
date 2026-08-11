@@ -161,7 +161,7 @@ html { scroll-padding-top: 88px; }
 
 /* ---------- 响应式细节 ---------- */
 @media (max-width: 768px) {
-  .hero__title { font-size: clamp(6rem, 24vw, 10rem); }
+  .hero__title { font-size: clamp(3.2rem, 13vw, 5rem); }
   .hero__data { gap: 1.4rem 2rem; }
 }
 @media (max-width: 480px) {
