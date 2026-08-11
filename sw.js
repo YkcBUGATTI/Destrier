@@ -1,5 +1,5 @@
 ﻿/* DESTRIER — Service Worker：页面骨架缓存，媒体网络优先 */
-const CACHE = 'destrier-v13';
+const CACHE = 'destrier-v15';
 const SHELL = [
   './',
   './index.html',
